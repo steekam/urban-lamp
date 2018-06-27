@@ -1,0 +1,98 @@
+/* login page */
+#login-body {
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.25), 
+      rgba(0, 0, 0, 0.25)
+    ),url('../assets/images/cover.jpg') no-repeat center center fixed;
+	background-size: cover;
+	width: 100%;
+}
+
+.form-box {
+    margin:0 auto;
+	margin-top: 100px;
+}
+
+.form-top {
+	overflow: hidden;
+	padding: 0 25px 15px 25px;
+	background: #444;
+	background: rgba(0, 0, 0, 0.35);
+	-moz-border-radius: 4px 4px 0 0; -webkit-border-radius: 4px 4px 0 0; border-radius: 4px 4px 0 0;
+	text-align: left;
+}
+
+.form-top-left {
+	float: left;
+	width: 75%;
+	padding-top: 25px;
+}
+
+.form-top-left h3 { margin-top: 0; color: #fff; }
+.form-top-left p { opacity: 0.8; color: #fff; }
+
+.form-top-right {
+	float: left;
+	width: 25%;
+	padding-top: 5px;
+	font-size: 66px;
+	color: #fff;
+	line-height: 100px;
+	text-align: right;
+	opacity: 0.3;
+}
+
+.form-bottom {
+	padding: 25px 25px 30px 25px;
+	background: rgb(43, 42, 42);
+	background: rgba(0, 0, 0, 0.3);
+	-moz-border-radius: 0 0 4px 4px; -webkit-border-radius: 0 0 4px 4px; border-radius: 0 0 4px 4px;
+	text-align: left;
+}
+
+.form-bottom form button.btn {
+	width: 100%;
+}
+
+#register-wrap, #register-wrap>a:hover{
+    margin-top: 15px;
+    color:#fff;
+}
+
+a:hover {
+    text-decoration: none;
+}
+/* /login page */
+
+/* registration */
+#reg-body{
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),url('../assets/images/graffiti-wall.jpg') no-repeat center center fixed;
+	background-size: cover;
+	width: 100%;
+}
+
+#registration-wrapper{	
+	padding-top: 65px;
+	margin: 0 auto;
+
+}
+#registration-wrapper center>h3,#bottom-link, #bottom-link>a{
+	color: white;
+}
+
+#bottom-link{
+	font-size: 20px;
+}
+
+#bottom-link>a:hover {
+	color: rgb(4, 133, 189);
+}
+
+#interests{
+	resize: unset;
+	height: 100px;
+}
+/* /registration */
