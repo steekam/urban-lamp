@@ -63,7 +63,9 @@ and open the template in the editor.
     <div class="container">
 
         <div id="registration-wrapper" class="col-md-8 col-lg-6 col-xs-10 col-sm-10">
-            <center><h3>REGISTRATION</h3></center>
+            <center><h3>THE ART GALLERY</h3>
+                <p>Registration</p>
+            </center>
             <form id="registrationForm" method="POST" action="registration">
                 <div class="form-group">
                     <label class="sr-only" for="firstname">First Name</label>

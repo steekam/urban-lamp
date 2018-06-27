@@ -79,7 +79,7 @@ a:hover {
 	margin: 0 auto;
 
 }
-#registration-wrapper center>h3,#bottom-link, #bottom-link>a{
+#registration-wrapper center,#bottom-link, #bottom-link>a{
 	color: white;
 }
 
