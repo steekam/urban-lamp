@@ -1,16 +1,5 @@
-<%-- 
-    Document   : registration
-    Created on : 23-Jun-2018, 23:23:47
-    Author     : adu
---%>
-
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
 <head>
     <title>Register</title>
@@ -27,26 +16,32 @@ and open the template in the editor.
     <script src="JS/jquery-3.3.1.js"></script>
     <script type="text/javascript">  
         function checkForm(){
+            var error = "";
             var pwd = document.getElementById('password').value;
             var confirmPwd = document.getElementById('confirmPassword').value;
+            var valid = true;
             
             if(pwd !== confirmPwd)
             {
                 document.getElementById('password').value="";
                 document.getElementById('confirmPassword').value="";
-                alert("The passwords do not match!");
-                return false;
+                error +="The passwords do not match!";
+                valid = false;
             }
             
             else if(pwd.length<6){
                 document.getElementById('password').value="";
                 document.getElementById('confirmPassword').value="";
-                alert("The password is too short!");
-                return false;
+                error +="Password should be at least 6 characters";
+                valid =  false;
                 
-            }else{
-                return true;
             }
+            var alert = "<div class='alert alert-warning alert-dismissible fade show' role = 'alert'>"+
+                            "<button type='button' class='close' data-dismiss='alert' aria-label='Close'>"+
+                            "<span aria-hidden='true' >&times;</span></button >"+error+
+                        "</div>";
+            $('.error').html(alert);
+            return valid;
         }
    
         $(document).ready(function(){
@@ -61,7 +56,7 @@ and open the template in the editor.
 </head>
 <body id="reg-body">
     <div class="container">
-
+        <div class="error"></div>
         <div id="registration-wrapper" class="col-md-8 col-lg-6 col-xs-10 col-sm-10">
             <center><h3>THE ART GALLERY</h3>
                 <p>Registration</p>
@@ -98,7 +93,7 @@ and open the template in the editor.
                         required>
                 </div>
                 <center id="bottom-link">
-                    Already have an account? <a href="login.html">Login</a>
+                    Already have an account? <a href="login.jsp">Login</a>
                 </center>
             </form>
         </div>

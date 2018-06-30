@@ -12,12 +12,16 @@
         <servlet-name>logout</servlet-name>
         <servlet-class>servlets.logout</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>LogoutServelet</servlet-name>
+        <servlet-class>servlets.LogoutServelet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registration</servlet-name>
         <url-pattern>/registration</url-pattern>
     </servlet-mapping>
     <welcome-file-list>
-        <welcome-file>login.html</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
         <welcome-file>registration.jsp</welcome-file>
     </welcome-file-list>
     <servlet-mapping>
@@ -27,6 +31,10 @@
     <servlet-mapping>
         <servlet-name>logout</servlet-name>
         <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LogoutServelet</servlet-name>
+        <url-pattern>/LogoutServelet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
