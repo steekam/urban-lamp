@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
     
     <link rel="stylesheet" href="css/style.css">
     
@@ -27,7 +28,7 @@
     }
   }
   if(user == null && sessionUser == null){
-      response.sendRedirect("login.html");
+      response.sendRedirect("login.jsp");
   }else{
        session = request.getSession();
        session.setAttribute("user", user);
@@ -54,10 +55,30 @@
         </div>
       </div>
     </nav>
+
+    <div class="fluid-container">
+      <div id="uploadWrap">
+        <button class="btn btn-info upload"><i class="fa fa-plus"></i> Upload image</button>
+        <form method='post' enctype="multipart/form-data">
+          <input type="file" name="image" id="imageUpload" accept="image/*">
+        </form>
+      </div>
+      
+      <div class="uploaded">
+        <!--<img src="/black.jpeg">-->
+      </div>
+
+      <%-- Slider container --%>
+      <div id="slider">
+      </div>
+    </div>
  
 
 <!--Bootstrap dependencies  -->
+<!-- Import libraries to help with animation -->
 <script src="JS/jquery-3.3.1.js"></script>
+
+<script src="JS/main.js">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>

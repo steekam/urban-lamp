@@ -16,6 +16,10 @@
         <servlet-name>LogoutServelet</servlet-name>
         <servlet-class>servlets.LogoutServelet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>UploadServelet</servlet-name>
+        <servlet-class>servlets.UploadServelet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>registration</servlet-name>
         <url-pattern>/registration</url-pattern>
@@ -36,9 +40,20 @@
         <servlet-name>LogoutServelet</servlet-name>
         <url-pattern>/LogoutServelet</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>UploadServelet</servlet-name>
+        <url-pattern>/UploadServelet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
+    <context-param> 
+        <description>Location to store uploaded file</description> 
+        <param-name>file-upload</param-name> 
+        <param-value>
+           /usr/local/glassfish5/glassfish/domains/domain1/applications/uploads
+        </param-value> 
+    </context-param>
 </web-app>

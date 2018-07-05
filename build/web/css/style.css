@@ -112,4 +112,13 @@ a:hover {
 	font-family: 'Monoton', cursive;
 	font-size: 20px;
 }
+
+#uploadWrap {
+	margin-top: 80px;
+}
+
+#uploadWrap form {
+	display: none;
+
+}
 /* /homepage */
